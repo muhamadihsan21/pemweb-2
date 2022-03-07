@@ -16,9 +16,39 @@
         </div>
     </nav>      
     <h2 style="text-align: left;" >Belanja Online</h2>
+        <div class="container-fluid d-flex">
+            <div class="container">
+                <div class="form-group row">
+                    <label for="customer" class="col-2 col-form-label">Customer</label> 
+                        <div class="col-6">
+                            <input id="customer" name="customer" placeholder="Masukkan nama anda" type="text" class="form-control">
+                        </div>
+                </div>
+                <div class="form-group row">
+                    <label for="produk" class="col-2 col-form-label">Pilih Produk</label> 
+                        <div class="col-6">
+                            <select id="produk" name="produk" class="custom-select">
+                                <option value="tv">Televisi</option>
+                                <option value="kulkas">Kulkas</option>
+                                <option value="Mesincuci">Mesin Cuci</option>
+                            </select>
+                        </div>
+                </div>
+                <div class="form-group row">
+                    <label for="jumlah" class="col-2 col-form-label">Jumlah</label> 
+                        <div class="col-6">
+                            <input id="jumlah" name="jumlah" placeholder="Masukkan Jumlah yang ingin dibeli" type="text" class="form-control">
+                        </div>
+                </div>
+                <div class="form-group row">
+                    <div class="offset-2 col-2">
+                        <button name="proses" type="submit" value="Simpan" class="btn btn-succes">Simpan</button>
+                    </div>
+                </div>
+            </div>
             <div class="card" style="width: 30em;">
                 <div class="card-header">
-                    <label for="harga" class="col-4 col-form-label">Daftar Harga</label>     
+                    <label for="harga" class="col-6 col-form-label">Daftar Harga</label>     
                 </div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">TV : 5.000.000</li>
@@ -29,35 +59,7 @@
                     Harga bisa berubah setiap saat
                 </div>
             </div>
-            <div class="container">
-                <div class="form-group row">
-                    <label for="customer" class="col-4 col-form-label">Customer</label> 
-                        <div class="col-8">
-                            <input id="customer" name="customer" placeholder="Masukkan nama anda" type="text" class="form-control">
-                        </div>
-                </div>
-                <div class="form-group row">
-                    <label for="produk" class="col-4 col-form-label">Pilih Produk</label> 
-                        <div class="col-8">
-                            <select id="produk" name="produk" class="custom-select">
-                                <option value="tv">Televisi</option>
-                                <option value="kulkas">Kulkas</option>
-                                <option value="Mesincuci">Mesin Cuci</option>
-                            </select>
-                        </div>
-                </div>
-                <div class="form-group row">
-                    <label for="jumlah" class="col-4 col-form-label">Jumlah</label> 
-                        <div class="col-8">
-                            <input id="jumlah" name="jumlah" placeholder="Masukkan Jumlah yang ingin dibeli" type="text" class="form-control">
-                        </div>
-                </div>
-                <div class="form-group row">
-                    <div class="offset-4 col-8">
-                        <button name="proses" type="submit" value="Simpan" class="btn btn-succes">Simpan</button>
-                    </div>
-                </div>
-            </div>
+        </div>
 <?php
             $customer = $_POST['customer'];
             $produk = $_POST['produk'];
