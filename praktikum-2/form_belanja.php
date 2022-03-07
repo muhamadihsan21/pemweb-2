@@ -10,13 +10,13 @@
   <div class="container_fluid1 col-8">
     <form method = "POST" action = "form_belanja.php">
     <div class="form-group row">
-    <label for="customer" class="col-4 col-form-label">Customer</label> 
+    <label for="customer" class="col-3 col-form-label fw-bold">Customer</label> 
     <div class="col-8">
         <input id="customer" name="customer" placeholder="Nama Customer" type="text" class="form-control">
     </div>
     </div>
     <div class="form-group row">
-    <label class="col-4">Pilih Produk</label> 
+    <label class="col-3  col-form-label fw-bold">Pilih Produk</label> 
     <div class="col-8">
         <div class="custom-control custom-radio custom-control-inline">
         <input name="produk" id="produk_0" type="radio" class="custom-control-input" value="TV"> 
@@ -33,14 +33,14 @@
     </div>
     </div>
     <div class="form-group row">
-    <label for="jumlah" class="col-4 col-form-label">Jumlah</label> 
-    <div class="col-4">
+    <label for="jumlah" class="col-3 col-form-label fw-bold">Jumlah</label> 
+    <div class="col-3">
         <input id="jumlah" name="jumlah" placeholder="Jumlah" type="text" class="form-control">
     </div>
     </div> 
     <div class="form-group row">
-    <div class="offset-4 col-8">
-        <button name="proses" type="submit" class="btn btn-primary">Submit</button>
+    <div class="offset-3 col-8">
+        <button name="proses" type="submit" class="btn btn-success">Kirim</button>
     </div>
     </div>
     </form>
@@ -64,26 +64,26 @@
 
 </div>
 <?php
-        $customer = $_POST['customer'];
-        $produk = $_POST['produk'];
-        $jumlah = $_POST['jumlah'];
+    $customer = $_POST['customer'];
+    $produk = $_POST['produk'];
+    $jumlah = $_POST['jumlah'];
 
 
-        if ($produk == 'TV'){
-            $harga = 4200000;
-        }elseif ($produk == 'KULKAS'){
-            $harga = 3100000;
-        }elseif ($produk == 'MESIN CUCI'){
-            $harga = 3800000;
-        }
+    if ($produk == 'TV'){
+        $harga = 4200000;
+    }elseif ($produk == 'KULKAS'){
+        $harga = 3100000;
+    }elseif ($produk == 'MESIN CUCI'){
+        $harga = 3800000;
+    }
 
-        $total = $jumlah * $harga;
+    $total = $jumlah * $harga;
 
-        echo '<br/> Nama Customer : '.$customer; 
-        echo '<br/>Produk Pilihan : '.$produk;
-        echo '<br/>Jumlah Beli : '.$jumlah; 
-        echo '<br/> Total Belanja :'.$total; 
-    ?>
+    echo ' Nama Customer : '.$customer; 
+    echo '<br/>Produk Pilihan : '.$produk;
+    echo '<br/>Jumlah Beli : '.$jumlah; 
+    echo '<br/> Total Belanja :'.$total; 
+?>
 
 </body>
 </html>
