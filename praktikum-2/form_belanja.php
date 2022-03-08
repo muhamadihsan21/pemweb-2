@@ -51,18 +51,18 @@
   </div>
   <div class="container_fluid2 col-4">
   <div class="card">
-				<h5 class="card-header bg-primary text-white">
-					Daftar Harga
-				</h5>
+	<h5 class="card-header bg-primary text-white">
+		Daftar Harga
+	</h5>
           <ul class="list-group list-group-flush">
             <li class="list-group-item">TV : 4.200.000</li>
             <li class="list-group-item">Kulkas : 3.100.000</li>
             <li class="list-group-item">Mesin Cuci : 3.800.000</li>
           </ul>
-				<div class="card-footer bg-primary text-white">
-					Harga Dapat Berubah Setiap Saat
-				</div>
-			</div>
+	<div class="card-footer bg-primary text-white">
+		Harga Dapat Berubah Setiap Saat
+	</div>
+	</div>
   </div>
 
 
